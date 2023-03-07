@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: gray;
+}
+a:hover{
+    color: white
+}
+button:hover{ cursor: pointer;}
+.fix_pad{
+    padding: 0 100px;
+}
+.fix_mar{
+    margin: 30px 0;;
+}
+.navbar{
+    position: fi;
+    background-color: black;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 20px;
+}
+.navbar ul li{
+    list-style-type: none;
+    font-size: 20px;
+}
+/* --------------------------------- section ---------------------------------- */
+main{
+    padding: 0 100px;
+}
+.section{
+    padding-top: 15px;
+    border-top: 3px solid gray;
+    border-width: 50%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.section p{
+    font-size: 20px;
+}
+.section ul li{
+    margin-bottom: 20px;
+    font-size: 23px;
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+.header h1{
+    font-size: 20px;
+    font-weight: 500;
+}
+.content_header{
+    font-size: 35px;
+    font-weight: 700;
+}
+   /*--------- image slider ---------- */
+.img_container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.slider{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+.slide{
+    position: absolute;
+    transition: 1s;
+}
+#pre_btn{
+    position: absolute;
+    z-index: 1;
+    left: 10px;
+    background: transparent;
+    border: none;
+}
+#next_btn{
+    transform: rotate(180deg);
+    position: absolute;
+    right: 10px;
+    background: transparent;
+    border: none;
+}
+#s4:focus{
+    background-color: rgb(85, 85, 136);
+}
