@@ -13,7 +13,8 @@ const transform = ()=>{
 function goPrev(){
     let btn =document.getElementById("pre_btn");
     if(count == 0){
-        return;
+        count = 4;
+        transform;
     }
     count--;
     transform();
@@ -21,7 +22,8 @@ function goPrev(){
 
 function goNext(){
     if(count == 3){
-        return;
+        count = -1;
+        transform();
     }
     count++;
     transform();
